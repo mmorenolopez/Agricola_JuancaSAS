@@ -1,4 +1,3 @@
-// import 'https://kit.fontawesome.com/a076d05399.js';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import header_style from './navbar/style.css';
@@ -6,7 +5,7 @@ import header_style from './navbar/style.css';
 function Header() {
   return (
     <>
-      <div className={header_style}>
+      <div class={header_style}>
         <nav>
           <input type="checkbox" id="check" />
           <label for="check" class="checkbtn">

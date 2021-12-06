@@ -8,7 +8,7 @@ function Asignacion() {
       <div class={style}>
         <div class="wrapper" style={{ backgroundImage: `url(${background})` }}>
           <div class="inner">
-            <form action="">
+            <form class="form-register" action="">
               <h3>Formulario Asignación</h3>
               <div class="form-group">
                 <div class="form-wrapper">

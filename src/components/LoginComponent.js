@@ -19,7 +19,6 @@ function Login() {
         <script src="login_resources/vendor/bootstrap/js/popper.js"></script>
         <script src="login_resources/vendor/bootstrap/js/bootstrap.min.js"></script>
         <script src="login_resources/vendor/select2/select2.min.js"></script>
-        <script src="login_resources/vendor/tilt/tilt.jquery.min.js"></script>
         <script src="login_resources/js/main.js"></script>
       </Helmet>
 
