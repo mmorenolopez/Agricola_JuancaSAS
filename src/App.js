@@ -39,6 +39,14 @@ function App() {
             href="footer_assets/ico/apple-touch-icon-72-precomposed.png"
           />
           <link rel="apple-touch-icon-precomposed" href="footer_assets/ico/apple-touch-icon-57-precomposed.png" />
+
+          {/* -Login- */}
+          <script src="login_resources/vendor/jquery/jquery-3.2.1.min.js"></script>
+          <script src="login_resources/vendor/bootstrap/js/popper.js"></script>
+          <script src="login_resources/vendor/bootstrap/js/bootstrap.min.js"></script>
+          <script src="login_resources/vendor/select2/select2.min.js"></script>
+          <script src="login_resources/vendor/tilt/tilt.jquery.min.js"></script>
+          <script src="login_resources/js/main.js"></script>
         </Helmet>
 
         <BrowserRouter>
