@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navigate, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Asignacion from './AsignacionComponent';
 import Footer from './FooterComponent';
 import Header from './HeaderComponent';
@@ -28,7 +28,7 @@ function Main() {
         <Route path="/tipo-cultivo" element={<TipoCultivo />} />
       </Routes>
 
-      <Navigate to="/home" replace={true} />
+      {/* <Navigate to="/home" replace={true} /> */}
 
       <Footer />
     </React.Fragment>
