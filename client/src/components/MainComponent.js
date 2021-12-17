@@ -27,9 +27,7 @@ function Main() {
         <Route path="/programacion" element={<Programacion />} />
         <Route path="/tipo-cultivo" element={<TipoCultivo />} />
       </Routes>
-
       {/* <Navigate to="/home" replace={true} /> */}
-
       <Footer />
     </React.Fragment>
   );

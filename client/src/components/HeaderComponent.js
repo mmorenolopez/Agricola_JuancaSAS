@@ -1,43 +1,39 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import header_style from './navbar/style.css';
+import React, { Component } from 'react'
+import { NavLink } from 'react-router-dom'
 
-function Header() {
-  return (
-    <>
-      <div class={header_style}>
-        <nav>
-          <input type="checkbox" id="check" />
-          <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-          </label>
-          <NavLink to="/home">
-            <label class="logo">JUANCA</label>
-          </NavLink>
-          <ul>
-            {/* <li>
-            <Link to="/home">Inicio</Link>
-          </li> */}
-            <li>
-              <NavLink to="/login">Login</NavLink>
-            </li>
-            <li>
-              <NavLink to="/registro">Registro</NavLink>
-            </li>
-            <li>
-              <NavLink to="/asignacion">Asigna</NavLink>
-            </li>
-            <li>
-              <NavLink to="/tipo-cultivo">Cultivo</NavLink>
-            </li>
-            <li>
-              <NavLink to="/parametros">Parámetros</NavLink>
-            </li>
-          </ul>
+export default class nav extends Component {
+  render() {
+    return (
+      <div>
+        <nav className="navbar navbar-expand-lg navbar-light bg-success">
+          <div className="container-fluid">
+            <NavLink className="navbar-brand text-white" to='/home'>
+              Agricola Juanca S.A.S
+            </NavLink>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+            </button>
+              <ul className="navbar-nav ms-auto">
+                <li className="nav-item">
+                  <NavLink className="nav-link active text-white" to="/login" >Login</NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link text-white" to="/registro" >Registro</NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link text-white" to="/asignacion" >Asignacion</NavLink>
+                </li>                               
+                <li className="nav-item">
+                  <NavLink className="nav-link text-white" to="/tipo-cultivo" >Cultivos</NavLink>                               
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link text-white" to="/parametros" >Parametros</NavLink>                               
+                </li>
+              </ul>
+          </div>
         </nav>
       </div>
-    </>
-  );
+    )
+  }
 }
 
-export default Header;
