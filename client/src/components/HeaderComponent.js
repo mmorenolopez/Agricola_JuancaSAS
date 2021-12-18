@@ -7,7 +7,7 @@ export default class nav extends Component {
       <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-success">
           <div className="container-fluid">
-            <NavLink className="navbar-brand text-white" to='/home'>
+            <NavLink className="navbar-brand text-white" to='/'>
               Agricola Juanca S.A.S
             </NavLink>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
