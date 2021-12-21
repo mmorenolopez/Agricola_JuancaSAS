@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server/index.js",
+    "start": "nodemon index.js",
     "build": "cd client && npm install && npm run build"
   },
   "repository": {
@@ -19,9 +19,15 @@
   },
   "homepage": "https://github.com/mmorenolopez/Agricola_JuancaSAS#readme",
   "dependencies": {
+    "body-parser": "^1.19.1",
     "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "mongoose": "^6.1.2"
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "mongoose": "^6.1.2",
+    "nodemon": "^2.0.15",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.1.0"
   },
   "engines": {
     "node": "v16.13.1"
