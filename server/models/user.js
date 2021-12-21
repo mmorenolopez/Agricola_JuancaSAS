@@ -4,10 +4,6 @@ const Schema = mongoose.Schema;
 const ObjectId = Schema.ObjectId;
 
 const userSchema = new Schema({
-  // _id: {
-  //   type: ObjectId,
-  //   require: false,
-  // },
   nombre: {
     type: String,
     require: true,
